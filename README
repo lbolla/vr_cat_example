@@ -2,3 +2,6 @@ This Heroku- and Velociraptor-compatible app is to be used for testing
 deployment tooling.  The app defines only one proc, called 'cat', which does
 nothing but start the Unix utility 'cat'.  Since it is passed no filenames it
 will wait for input on stdin until it is stopped.
+
+This app also contains a hello.txt file, which makes it compatible with the
+"hello" buildpack at https://github.com/heroku/heroku-buildpack-hello.
