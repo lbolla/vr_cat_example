@@ -1,0 +1,4 @@
+This Heroku- and Velociraptor-compatible app is to be used for testing
+deployment tooling.  The app defines only one proc, called 'cat', which does
+nothing but start the Unix utility 'cat'.  Since it is passed no filenames it
+will wait for input on stdin until it is stopped.
