@@ -9,7 +9,7 @@
 int main()
 {
     char* max_env = getenv("MAX_RAM");
-    int max_ram = max_env ? atoi(max_env) : 300;
+    int max_ram = max_env ? atoi(max_env) : 100;
 
     char* sleep_env = getenv("SLEEP_MILLISECONDS");
     int sleep_millisecs = sleep_env ? atoi(sleep_env) : 50;
@@ -20,7 +20,6 @@ int main()
     
     printf("I will now consume %dMB of RAM, 1MB at a time.\n", max_ram);
     printf("I will sleep %d milliseconds between allocating each MB.\n", sleep_millisecs);
-    printf("Set the MAX_RAM or SLEEP_MILLISECONDS env vars to change these values.\n");
 
     int count = 0;
     while(1)
