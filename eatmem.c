@@ -20,6 +20,7 @@ int main()
     
     printf("I will now consume %dMB of RAM, 1MB at a time.\n", max_ram);
     printf("I will sleep %d milliseconds between allocating each MB.\n", sleep_millisecs);
+    fflush(stdout);
 
     int count = 0;
     while(1)
@@ -28,6 +29,7 @@ int main()
         memset(m,0,1024*1024);
         count++;
         printf("Used %dMB of RAM.\n", count);
+        fflush(stdout);
         if (count >= max_ram) {
             break;
         }
